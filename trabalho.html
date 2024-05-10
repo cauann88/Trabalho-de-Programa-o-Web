@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trabalho.css">
     <title>Cadastro</title>
 </head>
 <body>
     <div>
-<h1>Cadastro para Emprego</h1>
-<p>Complete suas informações</p>
+<h1 id="Titulo" >Cadastro para Emprego</h1>
+<p id="Subtitulo" >Complete suas informações</p>
 <br>
     </div>
 
@@ -18,38 +19,37 @@
 <label>Nome</label>
 <input type="text" name="Nome" id="Nome"> 
 </div>
-
 <div>
 <label>Sobrenome</label>
 <input type="text" name="Sobrenome" id="Sobrenome">
 </div>
 </fieldset>
-
+<br>
 <div>
 <label>Email</label>
 <input type="email" name="Email" id="Email">
-</div>
+</div><br>
 
 <div>
     <label>Numero</label>
     <input type="number" name="Numero" id="Numero">
-    </div>
+    </div><br>
 
 <div>
     <label>Senha</label>
     <input type="password" name="Senha" id="Senha">
-    </div>
+    </div><br>
 <div>
     <label>Quais desses Hobbies você mais se identifica?</label>
     <label>
         <input type="radio" name="devweb" value="Ler">Ler
-    </label><br>
+    </label>
     <label>
         <input type="radio" name="devweb" value="Assistir Filme">Assistir Filme
-    </label><br>
+    </label>
     <label>
         <input type="radio" name="devweb" value="Jogar Bola">Jogar Bola 
-    </label><br>
+    </label>
     <label>
         <input type="radio" name="devweb" value="Jogar videogame">Jogar videogame
     </label><br><br>
@@ -63,8 +63,8 @@
 </div>
 
 <fieldset>
-<div>
-    <label>Selecione as tecnologias que ultiliza:</label><br><br>
+<div><br>
+    <label>Selecione as tecnologias que ultiliza:</label>
     <input type="checkbox" name="Tecnologia1" id="Tecnologia1" value="HTML">
     <label for="tecnologia1">HTML</label>
     <input type="checkbox" name="Tecnologia2" id="Tecnologia2" value="CSS">
@@ -82,9 +82,10 @@
 <div>
 <br>
 <label>Conte um pouco da sua experiencia</label>
-<textarea name="" id=""></textarea>
+<textarea rows="2" style="width: 250px;" name="experiencia" id="experiencia"></textarea>
 </div>
 
+<button type="submit">Concluido</button>
 </form>
 </body>
 </html>
