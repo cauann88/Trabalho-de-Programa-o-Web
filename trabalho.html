@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="trabalho.css">
+    <link rel="stylesheet"  type="text/css" href="trabalho.css">
     <title>Cadastro</title>
 </head>
 <body>
@@ -19,51 +19,62 @@
 <label>Nome</label>
 <input type="text" name="Nome" id="Nome"> 
 </div>
+
 <div>
 <label>Sobrenome</label>
 <input type="text" name="Sobrenome" id="Sobrenome">
 </div>
 </fieldset>
-<br>
+
+
 <div>
 <label>Email</label>
 <input type="email" name="Email" id="Email">
-</div><br>
-
-<div>
-    <label>Numero</label>
-    <input type="number" name="Numero" id="Numero">
-    </div><br>
-
-<div>
+</div>
     <label>Senha</label>
     <input type="password" name="Senha" id="Senha">
-    </div><br>
-<div>
-    <label>Quais desses Hobbies você mais se identifica?</label>
+    </div>
+    
+<div class="campo">
+    <label>De qual lado da aplicação você desenvolve?</label>
     <label>
-        <input type="radio" name="devweb" value="Ler">Ler
+        <input type="radio" name="devweb" value="frontend">front-end
     </label>
+    <label>
+        <input type="radio" name="devweb" value="backend">Back-end
+    </label>
+    <label>
+        <input type="radio" name="devweb" value="fullstack">Fullstack
+    </label>
+</div><br>
+
+<div class="grupo">
+    <label>Quais desses Hobbies você mais se identifica?</label>
+    <label><br>
+        <input type="radio" name="devweb" value="Ler">Ler
+    </label><br>
     <label>
         <input type="radio" name="devweb" value="Assistir Filme">Assistir Filme
     </label>
-    <label>
+    <label><br>
         <input type="radio" name="devweb" value="Jogar Bola">Jogar Bola 
     </label>
-    <label>
+    <label><br>
         <input type="radio" name="devweb" value="Jogar videogame">Jogar videogame
     </label><br><br>
 
     <label>Qual o nivel do seu conhecimento?</label>
-    <select id="Conhecimento"></select>
-    <option selected disabled value="">Selecione</option>
-    <option>Muito</option>
-    <option>Mais ou Menos</option>
-    <option>Pouco</option>
+    <select id="Conhecimento">
+        <option selected disabled value="">Selecione</option>
+        <option>Muito</option>
+        <option>Mais ou Menos</option>
+        <option>Pouco</option>
+    </select>
+   
 </div>
 
-<fieldset>
-<div><br>
+<fieldset class="grupo">
+<div id="check">
     <label>Selecione as tecnologias que ultiliza:</label>
     <input type="checkbox" name="Tecnologia1" id="Tecnologia1" value="HTML">
     <label for="tecnologia1">HTML</label>
